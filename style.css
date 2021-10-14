@@ -1,0 +1,51 @@
+h1,
+h2 {
+    font-size: 60px;
+    text-align: center;
+    font-family: arial;
+    margin: 10px;
+}
+
+button {
+    display: block;
+    margin: auto;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    cursor: url(../img/hammeer1.png), auto;
+}
+
+.tanah {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.tanah::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(../img/dirt-576619_1280.png)bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    bottom: -25px;
+}
+
+.tikus {
+    width: 100%;
+    height: 100%;
+    background: url(../img/kisspng-emoji-text-messaging-computer-mouse-sms-symbol-rat-mouse-5ad63e87456226.7583283515239901512842.png) bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100px;
+    transition: top 0, 5s;
+}
+
+.tanah.muncul .tikus {
+    top: -15px;
+}
